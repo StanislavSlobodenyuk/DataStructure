@@ -1,14 +1,13 @@
 ﻿// реалізація однозв'язкового списку 
+using System;
 using System.Collections;
+using System.Collections.Generic;
 
 LinkedList<int> linkedList = new LinkedList<int>();
 linkedList.Add(1);
 linkedList.Add(2);
-linkedList.Add(3);
-linkedList.Add(4);
-linkedList.Add(5);
-linkedList.Add(6);
 
+Console.WriteLine(linkedList);
 
 linkedList.FindCentralElement();
 
@@ -20,23 +19,23 @@ public class Node<T>
     public T Data { get; set; }
     public Node<T>? Next { get; set; }
 
-    public Node( T data )
+    public Node(T data)
     {
         Data = data;
     }
 }
 
-class LinkedList<T> : IEnumerable<T> 
+class LinkedList<T> : IEnumerable<T>
 {
     Node<T>? head;
     Node<T>? tail;
     int count = 0;
 
-    public void Add( T data)
+    public void Add(T data)
     {
-        Node<T> node = new Node<T> ( data );
+        Node<T> node = new Node<T>(data);
 
-        if ( head == null )
+        if (head == null)
         {
             head = node;
         }
@@ -45,16 +44,16 @@ class LinkedList<T> : IEnumerable<T>
         tail = node;
         count++;
     }
-    public bool Remove( T data )
+    public bool Remove(T data)
     {
         Node<T>? current = head;
         Node<T>? previous = null;
 
-        while ( current != null && current.Data != null) 
+        while (current != null && current.Data != null)
         {
             if (current.Data.Equals(data))
             {
-                if(previous != null)
+                if (previous != null)
                 {
                     previous.Next = current.Next;
                     if (current.Next == null)
@@ -67,7 +66,7 @@ class LinkedList<T> : IEnumerable<T>
                     head = head?.Next;
                     if (head == null)
                     {
-                        tail = null;    
+                        tail = null;
                     }
                 }
                 count--;
@@ -79,7 +78,7 @@ class LinkedList<T> : IEnumerable<T>
         return false;
     }
 
-    public int Count { get { return count; } } 
+    public int Count { get { return count; } }
     public bool isEmpy { get { return count == 0; } }
 
     public void Clear()
@@ -117,7 +116,7 @@ class LinkedList<T> : IEnumerable<T>
         Node<T>? next = null;
         Node<T>? current = head;
 
-        while (current!= null)
+        while (current != null)
         {
             next = current.Next;
             current.Next = prev;
