@@ -43,7 +43,7 @@ namespace graph
 
                 foreach (var neighbor in adjacencyList[vertex])
                 {
-                    Console.Write(neighbor.Key + "(" + neighbor.Value + ") " );
+                    Console.Write(neighbor.Key + "(" + neighbor.Value + ")" );
                 }
 
                 Console.WriteLine();
