@@ -1,1 +1,3 @@
-﻿HashSet<int> set = new HashSet<int>();
+﻿//Реалізація сету
+
+HashSet<int> set = new HashSet<int>();

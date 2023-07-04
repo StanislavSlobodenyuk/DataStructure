@@ -1,4 +1,4 @@
-﻿
+﻿// реалізація графу
 namespace graph
 { 
     internal class Graph 

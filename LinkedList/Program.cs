@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿// реалізація двохзв'язкового списку
+
+using System.Collections;
 
 LinkedList<int> numbers = new LinkedList<int>();
 

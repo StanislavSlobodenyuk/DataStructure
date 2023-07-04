@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿//реалізація деку
+
+using System.Collections;
 
 class Deque<T> : IEnumerable<T>
 {

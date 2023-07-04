@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿// Реалізація черги
+
+using System.Collections;
 
 class Queue<T> : IEnumerable<T>
 {

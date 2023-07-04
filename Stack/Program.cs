@@ -1,19 +1,4 @@
-﻿//// Як стек можна реалізувати за допомогою c#
-//Stack<int> defaultStack = new Stack<int>();
-
-//// додавання елемену у стек
-//defaultStack.Push(0);
-//defaultStack.Push(1);
-//defaultStack.Push(2);
-//defaultStack.Push(3);
-
-//// видалення елементу з стеку
-//Console.WriteLine(defaultStack.Pop() + " pop ");
-//Console.WriteLine(defaultStack.Pop() + " pop ");
-
-//// перегляд  останнього елементу в стеку
-//Console.WriteLine(defaultStack.Peek() + " peek ");
-
+﻿// реалізація стеку за допомогою масиву та листа
 
 ArrayStack<int> stack = new ArrayStack<int>(10);
 

@@ -1,4 +1,5 @@
 ﻿// реалізація однозв'язкового списку 
+
 using System;
 using System.Collections;
 using System.Collections.Generic;

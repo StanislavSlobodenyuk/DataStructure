@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿// реалізація хеш-таблиці
+
+using System.Collections;
 
 
 HashTable<string, int> hashTable = new HashTable<string, int>();
