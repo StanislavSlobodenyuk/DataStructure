@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 
-HashTable<string, string> hashTable = new HashTable<string, string>();
+
+HashTable<string, int> hashTable = new HashTable<string, int>();
 
 
 hashTable.Add("One", 1);
