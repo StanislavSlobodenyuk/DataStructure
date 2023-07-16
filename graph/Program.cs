@@ -4,7 +4,7 @@ public class Program
 {
     public static void Main()
     {
-        Graph graph = new Graph();
+        Graph<int> graph = new Graph<int>();
 
         graph.AddVertex(1);
         graph.AddVertex(2);
@@ -17,7 +17,8 @@ public class Program
         graph.AddEdge(2, 4, 9);
         graph.AddEdge(3, 4, 11);
         graph.AddEdge(4, 5, 13);
-
         graph.PrintGraph();
+
+        graph.CheckingAdjacentVertices(1);
     }
 }
